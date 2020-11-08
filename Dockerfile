@@ -1,6 +1,7 @@
 FROM alpine:latest
 
-WORKDIR /root
+RUN mkdir /molecule
+WORKDIR /molecule
 
 # docker setup
 RUN apk add --no-cache docker openrc
